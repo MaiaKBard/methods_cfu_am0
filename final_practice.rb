@@ -77,12 +77,34 @@ puts custom_greeting(second_name)
 
 # Use the puts or print command to see the return value in the console:
 
-Maia do this without me first.  if you get stuck again, look at your bonus method then try again
+
+def greet_person(first_name, middle_name, last_name)
+  "Hello, #{first_name}\ #{middle_name}\ #{last_name}! How are you?"
+end
+
+first_1 = "Maia"
+second_1 = "Kathlyn"
+third_1 = "Bard"
+
+first_2 = "Remi"
+second_2 = "Sue"
+third_2 = "Smith"
+
+puts greet_person(first_1, second_1, third_1)
+puts greet_person(first_2, second_2, third_2)
+
 
 # What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+# puts greet_person(first_1, second_1, third_1)
+# return:Hello, Maia Kathlyn Bard! How are you?
 
+# puts greet_person(first_2, second_2, third_2)
+# Hello, Remi Sue Smith! How are you?
+
+# # How many arguments did you pass your method?
+# 3 arguments
+# # What data type was your argument(s)?
+# string
 
 # 4: Write a method named "square" that takes in one integer, and returns the square of that integer.
 
@@ -108,14 +130,14 @@ puts also_square(first_num)
 puts also_square(second_num)
 
 # What is the return value of your method?
-# puts square(first_num, num2)
-# return: 16
+# puts also_square(first_num)
+# return: 64
 
-# puts square(second_num,num2)
-# return: 6
+# puts also_square(second_num)
+# return: 9
 
 # How many arguments did you pass your method?
-# two arguments
+# one arguments
 
 # What data type was your argument(s)?
 # integers
